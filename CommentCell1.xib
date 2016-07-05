@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="comment2" selectionStyle="default" indentationWidth="10" reuseIdentifier="comment2" rowHeight="148" id="KGk-i7-Jjw" customClass="CommentCell1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="147.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ssv-jX-bQd">
+                        <rect key="frame" x="15" y="20" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="MJG-7l-RFe"/>
+                            <constraint firstAttribute="width" constant="40" id="sSb-KZ-kE1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkw-o1-Kfp">
+                        <rect key="frame" x="65" y="22" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22S-0w-0gv">
+                        <rect key="frame" x="225" y="22" width="80" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="NAC-pg-I4R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYh-bI-4r9">
+                        <rect key="frame" x="65" y="48" width="240" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="气泡.png" translatesAutoresizingMaskIntoConstraints="NO" id="OEH-Z3-Wdm">
+                        <rect key="frame" x="65" y="67" width="240" height="42"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tb-sd-7rI">
+                        <rect key="frame" x="70" y="82" width="235" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3tb-sd-7rI" secondAttribute="trailing" constant="15" id="1yT-xG-Ejw"/>
+                    <constraint firstItem="22S-0w-0gv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="3hx-Np-Xso"/>
+                    <constraint firstItem="Ssv-jX-bQd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="AeL-WD-O9O"/>
+                    <constraint firstItem="3tb-sd-7rI" firstAttribute="bottom" secondItem="OEH-Z3-Wdm" secondAttribute="bottom" id="PEv-Hl-k88"/>
+                    <constraint firstItem="3tb-sd-7rI" firstAttribute="top" secondItem="eYh-bI-4r9" secondAttribute="bottom" constant="20" id="PSY-8v-AWn"/>
+                    <constraint firstItem="OEH-Z3-Wdm" firstAttribute="leading" secondItem="3tb-sd-7rI" secondAttribute="leading" constant="-5" id="QBJ-3h-LGp"/>
+                    <constraint firstItem="Ssv-jX-bQd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="T4e-y5-eOB"/>
+                    <constraint firstItem="eYh-bI-4r9" firstAttribute="leading" secondItem="Ssv-jX-bQd" secondAttribute="trailing" constant="10" id="Uqx-d9-jB8"/>
+                    <constraint firstItem="pkw-o1-Kfp" firstAttribute="leading" secondItem="Ssv-jX-bQd" secondAttribute="trailing" constant="10" id="XAw-hf-hK8"/>
+                    <constraint firstItem="22S-0w-0gv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pkw-o1-Kfp" secondAttribute="trailing" constant="10" id="ZR8-KD-jIj"/>
+                    <constraint firstAttribute="trailing" secondItem="22S-0w-0gv" secondAttribute="trailing" constant="15" id="gNy-fq-0h6"/>
+                    <constraint firstItem="3tb-sd-7rI" firstAttribute="top" secondItem="OEH-Z3-Wdm" secondAttribute="top" constant="15" id="l9B-LV-2EX"/>
+                    <constraint firstItem="3tb-sd-7rI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="70" id="nhu-5E-ZQi"/>
+                    <constraint firstItem="eYh-bI-4r9" firstAttribute="top" secondItem="pkw-o1-Kfp" secondAttribute="bottom" constant="10" id="u0g-Oe-Gp3"/>
+                    <constraint firstAttribute="trailing" secondItem="eYh-bI-4r9" secondAttribute="trailing" constant="15" id="vXV-P7-cKv"/>
+                    <constraint firstItem="OEH-Z3-Wdm" firstAttribute="trailing" secondItem="3tb-sd-7rI" secondAttribute="trailing" id="w9Q-da-MdU"/>
+                    <constraint firstItem="pkw-o1-Kfp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="xmL-Fk-exM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backImage" destination="OEH-Z3-Wdm" id="R9c-mM-TDK"/>
+                <outlet property="content" destination="eYh-bI-4r9" id="cx8-K6-SKb"/>
+                <outlet property="date" destination="22S-0w-0gv" id="cAY-SD-pEc"/>
+                <outlet property="headImage" destination="Ssv-jX-bQd" id="NM7-eD-giT"/>
+                <outlet property="reply" destination="3tb-sd-7rI" id="YcD-O1-s6f"/>
+                <outlet property="userName" destination="pkw-o1-Kfp" id="EEs-zL-pBY"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="302"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="气泡.png" width="72" height="42"/>
+    </resources>
+</document>

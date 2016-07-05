@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindDetailViewController">
+            <connections>
+                <outlet property="BottomScroll" destination="Gw7-iZ-fJQ" id="vHx-64-dgj"/>
+                <outlet property="leaderView" destination="rQZ-gc-D9V" id="I0g-es-5TJ"/>
+                <outlet property="nextView" destination="LIA-JB-6il" id="PkD-8O-3XU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gw7-iZ-fJQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQZ-gc-D9V">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="YrF-3l-EQf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIA-JB-6il">
+                    <rect key="frame" x="0.0" y="140" width="320" height="428"/>
+                    <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gw7-iZ-fJQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1gp-Ea-ie2"/>
+                <constraint firstItem="Gw7-iZ-fJQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9n5-Np-Jnm"/>
+                <constraint firstItem="LIA-JB-6il" firstAttribute="top" secondItem="rQZ-gc-D9V" secondAttribute="bottom" id="CBp-QH-1Jj"/>
+                <constraint firstAttribute="trailing" secondItem="Gw7-iZ-fJQ" secondAttribute="trailing" id="EJ8-B0-OkM"/>
+                <constraint firstItem="rQZ-gc-D9V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Elb-ur-MT9"/>
+                <constraint firstItem="LIA-JB-6il" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Iyh-zn-CrP"/>
+                <constraint firstAttribute="trailing" secondItem="rQZ-gc-D9V" secondAttribute="trailing" id="RIg-Q5-GLP"/>
+                <constraint firstAttribute="bottom" secondItem="LIA-JB-6il" secondAttribute="bottom" id="fEk-vD-oP5"/>
+                <constraint firstAttribute="trailing" secondItem="LIA-JB-6il" secondAttribute="trailing" id="jgQ-6z-knu"/>
+                <constraint firstItem="rQZ-gc-D9V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wPe-Wu-Jgz"/>
+                <constraint firstAttribute="bottom" secondItem="Gw7-iZ-fJQ" secondAttribute="bottom" id="zEQ-Pe-99I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="121" y="29"/>
+        </view>
+    </objects>
+</document>
